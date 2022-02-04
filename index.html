@@ -1,1 +1,83 @@
-Hello, world
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <!-- your content here... -->
+
+  <div id="main" class='full-width'>
+    <div class='box-full-width'>
+      <h2 class='main-box center'>
+        Top Countries to visit in 2022 </h2>
+    </div>
+
+    <div class='flex'>
+      <div id='albania' class='country-container center'>
+        <div class='country-name'>
+          Ranked #1
+        </div>
+        <div class='center bold'>
+          Albania
+        </div>
+      </div>
+      <div id='italy' class='country-container center'>
+        <div class='country-name'>
+          Ranked #2
+        </div>
+        <div class='center bold'>
+         Italy
+        </div>
+      </div>
+      <div id='greece' class='country-container center'>
+        <div class='country-name'>
+          Ranked #3
+        </div>
+        <div class='center bold'>
+          Greece
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="rank1" class='full-width bold' style="display: none;">
+    <img src='https://ychef.files.bbci.co.uk/976x549/p093hz3v.jpg' />
+    Number 1 ranked country: <p> Albania is located in Europe and it's famous for its hospitality and variety of toursim activities </p> <button id="rank1_goback">Go Back</button>
+  </div>
+
+  <div id="rank2" class='full-width bold' style="display: none;">
+    <img src='https://cdn.cnn.com/cnnnext/dam/assets/170606121206-italy---travel-destination---shutterstock-517522957.jpg' />
+    Number 2 ranked country: <p> Italy is located in Europe, and it's famous for its history and cultural sites </p> <button id="rank2_goback">Go Back</button>
+  </div>
+
+
+  <div id="rank3" class='full-width bold' style="display: none;">
+    <img src='https://handluggageonly.co.uk/wp-content/uploads/2015/05/Hand-Luggage-Only-7.jpg' />
+    Number 3 ranked country: <p> Greece is located in Europe, and it's famous for the countless touristic islands </p> <button id="rank3_goback">Go Back</button>
+  </div>
+  <!-- load jquery. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
