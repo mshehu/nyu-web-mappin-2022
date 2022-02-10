@@ -1,3 +1,5 @@
+// there are buttons clicked
+
 $('#albania').on('click', function() {
   $("#main").hide();
   $('#rank1').show();
