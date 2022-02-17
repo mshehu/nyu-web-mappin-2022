@@ -19,6 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -61,23 +62,34 @@
 
   </div>
 
-  <div id="rank1" class='full-width bold' style="display: none;">
-    <img src='https://ychef.files.bbci.co.uk/976x549/p093hz3v.jpg' />
-    Number 1 ranked country: <p> Albania is located in Europe and it's famous for its hospitality and variety of toursim activities </p> <button id="rank1_goback" class="btn-go-back">Go Back</button>
-  </div>
+  <div style=" display: flex; flex-direction: row; width: 100vw;">
+    <div style="width: 50%;">
+      <div id="rank1" class='full-width bold' style="display: none;">
+        <img src='https://ychef.files.bbci.co.uk/976x549/p093hz3v.jpg' />
+        Number 1 ranked country: <p> Albania is located in Europe and it's famous for its hospitality and variety of toursim activities </p> <button id="rank1_goback" class="btn-go-back">Go Back</button>
+      </div>
 
-  <div id="rank2" class='full-width bold' style="display: none;">
-    <img src='https://cdn.cnn.com/cnnnext/dam/assets/170606121206-italy---travel-destination---shutterstock-517522957.jpg' />
-    Number 2 ranked country: <p> Italy is located in Europe, and it's famous for its history and cultural sites </p> <button id="rank2_goback" class="btn-go-back">Go Back</button>
-  </div>
+      <div id="rank2" class='full-width bold' style="display: none;">
+        <img src='https://cdn.cnn.com/cnnnext/dam/assets/170606121206-italy---travel-destination---shutterstock-517522957.jpg' />
+        Number 2 ranked country: <p> Italy is located in Europe, and it's famous for its history and cultural sites </p> <button id="rank2_goback" class="btn-go-back">Go Back</button>
+      </div>
 
 
-  <div id="rank3" class='full-width bold' style="display: none;">
-    <img src='https://handluggageonly.co.uk/wp-content/uploads/2015/05/Hand-Luggage-Only-7.jpg' />
-    Number 3 ranked country: <p> Greece is located in Europe, and it's famous for the countless touristic islands </p> <button id="rank3_goback" class="btn-go-back">Go Back</button>
+      <div id="rank3" class='full-width bold' style="display: none;">
+        <img src='https://handluggageonly.co.uk/wp-content/uploads/2015/05/Hand-Luggage-Only-7.jpg' />
+        Number 3 ranked country: <p> Greece is located in Europe, and it's famous for the countless touristic islands </p> <button id="rank3_goback" class="btn-go-back">Go Back</button>
+      </div>
+    </div>
+
+    <div id='mapContainer' style="display: none; width: 50%;">
+    </div>
   </div>
   <!-- load jquery. -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+
   <script src="js/scripts.js"></script>
+  <script src="js/map.js"></script>
+
 </body>
 </html>
