@@ -2,7 +2,11 @@
 mapboxgl.accessToken =
 'pk.eyJ1IjoibXRzaGVodSIsImEiOiJja3pxcWxhamUwNTZrMnZvdzV5ZGN6emQzIn0.NovLA1r6sNV2eZAHxt2UFA' ;
 
+// center point for the map
 var mediterraneanSea = [19.149818037918454, 39.52530600087885]
+
+
+// teh created map
 
 var map = new mapboxgl.Map({
  container: 'mapContainer', // HTML container id
@@ -13,6 +17,8 @@ var map = new mapboxgl.Map({
  maxZoom: 14
 });
 
+
+// 3 main points to be displayed in the map
   var pointsOfInterest = [
     {
     lngLat: [20.010330272236992, 39.873541606618055],
@@ -31,7 +37,7 @@ var map = new mapboxgl.Map({
     },
 ]
 
-
+//generated popup with 2 rows of text
 pointsOfInterest.forEach(function(pointOfInterestItem) {
   var popup = new mapboxgl.Popup({offset: 40})
   .setHTML(`
@@ -39,6 +45,7 @@ pointsOfInterest.forEach(function(pointOfInterestItem) {
     <p>${pointOfInterestItem.subText}</p>
     `);
 
+//marker
   new mapboxgl.Marker()
   .setLngLat(pointOfInterestItem.lngLat)
   .setPopup(popup)
